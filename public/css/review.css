@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+@import url("https://fonts.googleapis.com/css?family=Bitter");
+@import url("https://fonts.googleapis.com/css?family=Cuprum");
+
+body {
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+  background: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/QwIr88a/aerial-drone-footage-illuminated-skyscrapers-manhattan-new-york-city-modern-night-famous-buildings-travel-crowded-tourism-usa-hd_vdufwi7sx__F0000.png');
+  opacity: 0.93;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: Arial, san-serif;
+  line-height: 30px;
+  color: #404040; }
+
+.header {
+  background-color: black;
+  opacity: 0.93;
+  position: relative;
+  padding-top: 40px;
+  margin-left: -30px;
+  margin-top: -10px;
+  box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.25); }
+
+h1 {
+  padding-bottom: 30px;
+  text-align: center;
+  color: white;
+  font-family: Arial;
+  font-size: 50px;
+  letter-spacing: 5px;
+  margin-top: -10px; }
+
+.navigation {
+  text-align: right;
+  margin-top: -40px;
+  margin-right: 10px; }
+
+.navigation li {
+  display: inline-block;
+  margin: 0 0.5em; }
+
+.navigation li a {
+  display: block;
+  padding: 1em 0.3em;
+  color: grey;
+  text-align: left;
+  font-family: sans-serif;
+  font-size: 17px;
+  text-decoration: none; }
+
+select {
+  font-size: 15px;
+  /*-webkit-appearance: none;*/
+  padding: 7px 7px 7px 7px;
+  background: #FFC459;
+  line-height: 1.5;
+}
+
+h2 {
+  text-align: left; }
+
+.container {
+  max-width: 430px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative; }
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="detail"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif; }
+
+#contact {
+  background: #F9F9F9;
+  padding: 25px;
+  margin: 150px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); }
+
+#contact h2 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px; }
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400; }
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="detail"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: white;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="detail"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+  border: 1px solid #aaa;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: orange;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+  background: green;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.footer {
+  background: black;
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+  height: 32px; }
+
+h3 {
+  text-align: center;
+  font-size: 15px;
+  vertical-align: text-bottom;
+  color: white; }
