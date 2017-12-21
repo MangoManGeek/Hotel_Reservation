@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Statistics</title>
+	<meta charset="utf-8" lang="en">
+	<link rel="stylesheet" type="text/css" href="/css/stats.css">
+</head>
+
+  <body>
+    <div class="header">
+      <ul class="navigation" role="navigation">
+        <li><a id="home" href="/index.html">Home</a></li>
+        <li><a id="signin" href="#">Hi Admin!</a></li>
+      </ul>
+      <h1>Hulton</h1>
+    </div>
+
+    <header class="container">
+      <div class="selector">
+        <div class="options">
+          <div class="col">
+            <div class="sb-custom-select">
+              <select name="<portlet:namespace/>Country" id="category">
+                <option value="" selected disabled>Category</option>
+                <option value="room">Highest Rated Room Type</option>
+                <option value="customer">5 Best Customers</option>    
+                <option value="breakfast">Highest Rated Breakfast Type</option>
+                <option value="service">Highest Rated Service Type</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class = col>
+            <input placeholder="Check-In Date" class="textbox-n" type="text" onfocus="(this.type='date')" id="indate" onchange="updatedate();">
+          </div>
+
+          <div class = col>
+            <input placeholder="Check-Out Date" class="textbox-n" type="text" onfocus="(this.type='date')" id="outdate" onchange="updatedate();">
+          </div>    
+        </div>
+         
+        <div class = "search">
+          <button name="search" type="search" id="search-hotel" data-submit="...Sending">Search</button>
+        </div>
+      </div>    
+    </header>
+    
+    <!--my profile-->
+    <section class="container">
+      <h2>Statistics</h2>
+      <!--<table class="table-details">
+        <tr>
+          <th>Hotel ID</th>
+          <th>Review Tyle</th>
+          <th colspan="4">What did they say</th>
+        </tr>
+    
+        <tbody id='reviews'>
+          <!--
+          <div class="row">
+            <div class="col-sm-4">
+              <h4 id='hotel'>Hotel</h4>
+              <p>1128</p>
+              <p>0302</p>
+              <p>1008</p>
+              <p>0827</p>
+            </div>
+            <div class="col-sm-4">
+              <h4 id='detailedType'>Type/Name</h4>
+              <p>Chinese</p>
+              <p>Japanese</p>
+              <p>French</p>
+              <p>Mexican</p>
+            </div>
+            <div class="col-sm-4">
+              <h4 id='rating'>Rate/Price</h4>
+              <p>9.5</p>
+              <p>7.6</p>
+              <p>8.1</p>
+              <p>8.2</p>
+            </div>
+
+          </div>
+          
+        </tbody>
+      </table>    -->
+      <table style="width:100%">
+        <tr>
+          <th width="44%">Hotel</th>
+          <th width="40%">Type/Username</th> 
+          <th>Avg. Rating/Price</th>
+        </tr>
+        <tbody id="list">
+          <!--
+          <tr>
+            <td>1001</td>
+            <td>Chinese</td> 
+            <td>9.2</td>
+          </tr>
+          <tr>
+            <td width="44%">1008</td>
+            <td width="44%">French</td> 
+            <td>9.2</td>
+          </tr>
+          <tr>
+            <td>1007</td>
+            <td>Japanese</td> 
+            <td>9.2</td>
+          </tr>
+          <tr>
+            <td>1012</td>
+            <td>Mexican</td> 
+            <td>9.2</td>
+          </tr>-->
+        </tbody>
+      </table>
+    </section>
+
+    <div class="footer">
+      <h3>Copyright &copy; Hulton 2017</h3>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  	<script src="/js/stats.js"></script>
+  </body>
+
+</html>

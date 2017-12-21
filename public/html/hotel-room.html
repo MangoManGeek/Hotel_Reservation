@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Room Details</title>
+  <meta charset="utf-8" lang="en">
+  <link rel="stylesheet" type="text/css" href="/css/hotel-room.css">
+</head>
+<body>
+<div class="header">
+  <ul class="navigation" role="navigation">
+    <li><a id="home" href="/html/home1.html">Home</a></li>
+    <li><a id="myres" href="/html/myReservation.html">My Reservation</a></li>
+    <li><a id="signin" href="#">Hi there</a></li>
+  </ul>
+<h1>Hulton</h1>
+</div>
+
+<div class="modal">
+  <div class="modal-content">
+    <div class="modal-left">
+      <div class="modal-content-title">room details</div>
+      <table class="reservation-details">
+        <tbody>
+          <!--<tr>
+            <td>Hotel Location</td>
+            <td id='location'></td>
+          </tr>
+          <tr>
+            <td>Date</td>
+            <td><p id='indate'></p><p id='outdate'></p></td>
+          </tr>-->
+          <tr>
+            <td>Room Number</td>
+            <td id='roomNum'></td>
+          </tr>
+          <tr>
+            <td>Room Type</td>
+            <td id='roomType'></td>
+          </tr>
+          <tr>
+            <td>Room Capacity</td>
+            <td id='roomCap'></td>
+          </tr>
+          <tr>
+            <td>Price</td>
+            <!--<td><strike>$400(-20%)</strike><span class="discounted">$320</span></td>-->
+            <td id='roomPrice'></td>
+          </tr>
+          <tr valign="top">
+            <td>Description</td>
+            <td id='roomDescription' colspan="2">
+            </td>
+          </tr>
+          <tr>
+            <td>Select Service</td>
+            <td id='service-list'> 
+              <input type="checkbox" id="pickup" name="pickup" value="Airport Pickup">Airport Pickup<br>
+              <input type="checkbox" id="dropoff" name="dropoff" value="Airport Dropoff">Airport Dropoff<br>
+              <input type="checkbox" id="parking" name="parking" value="Parking">Parking<br>
+              <input type="checkbox" id="laundry" name="laundry" value="Laundry">Laundry<br>
+            </td>
+          </tr>
+          
+          <tr>
+            <td>Select Breakfast</td>
+            <td id='breakfast-list'> 
+              <input type="checkbox" name="french" value="French">French
+              <select id="quantity1">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select><br>
+              
+              <input type="checkbox" name="chinese" value="Chinese">Chinese
+              <select id="quantity2">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select><br>
+           
+              <input type="checkbox" name="american" value="American">American
+              <select id="quantity3">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select><br>
+            
+              <input type="checkbox" name="japanese" value="Japanese">Japanese
+              <select id="quantity4">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select><br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div> <!-- .modal-left -->
+    
+    <div class="modal-right">
+      <div class="modal-content-title">reviews</div>
+      <table class="table-details">
+        <thead>
+          <tr><a href="#">
+            <!--<th>Hotel ID</th>-->
+            <th>Review Tyle</th>
+            <th colspan="4">What did they say</th>
+          </a></tr>
+        </thead>
+        <tbody id='reviews'>
+          <tr>
+            <td>Room</td>
+            <td colspan="4"><p>Really nice room for two. It has an amazing review of Mahattan from the 13th floor. Definitely recommanded!!</p></td>
+          </tr>
+          <tr>
+            <td>Breakfast</td>
+            <td><p>The French brunch here is the best I ever had. Love the banana crêpe with crumbled peanuts!</p></td>
+          </tr>
+          <tr>
+            <td>Breakfast</td>
+            <td><p>They offer a great variety of breakfast from the globe. The Chinese dim sum is very authentic, and the price is reasonal as well.</p></td>
+          </tr>
+          <tr>
+            <td>Room</td>
+            <td><p>Very stylish bathrooms, and also a huge full-length mirror.</p></td>
+          </tr>
+          <tr>
+            <td>Service</td>
+            <td><p>The facilities in the gym are great. They even have high protein snacks provided! Very well thought!</p></td>
+          </tr>
+        </tbody>
+      </table>
+    </div> <!-- .modal-right -->
+  </div> <!-- .modal-content -->
+  <div class="modal-footer">
+    <button id="create" class="create"><a href="">Create reservation</a></button>
+  </div>
+</div> <!-- .modal -->
+
+<div class="footer">
+  <h3>Copyright &copy; Hulton 2017</h3>
+</div>
+ 
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="/js/hotel-room.js"></script>
+
+</body>
+</html>

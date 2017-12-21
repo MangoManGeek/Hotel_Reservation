@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Review</title>
+	<meta charset="utf-8" lang='en'>
+	<link rel="stylesheet" type="text/css" href="/css/review.css"> 
+</head>
+<body>
+
+<div class="header">
+  <ul class="navigation" role="navigation">
+    <li><a id="home" href="/html/home1.html">Home</a></li>
+	  <li><a id="myres" href="/html/myReservation.html">My Reservation</a></li>
+		<li><a id="signin" href="#">Hi there</a></li>
+  </ul>
+  <h1>Hulton</h1>
+</div>
+
+<div class="container">  
+  <section id="contact" action="" method="post">
+    <h2>Review Form</h2>
+    <h4>Thank you for choosing Hulton!</h4>
+    <h2>
+      <select id='reviewType' name="<portlet:namespace/>ReviewType" onchange="detailChange()">
+        <option value="type" disabled selected> Select Review Type</option>
+        <option value="room">Room</option>
+        <option value="breakfast">Breakfast</option>
+        <option value="service">Services</option>
+      </select>
+      
+      <select id='detailedType' name="<portlet:namespace/>DetailedType">
+        <option value="type" disabled selected> Select Detailed Type</option>
+      </select>
+      
+      <select id='rating'>
+        <option value="type" disabled selected> Rate (10 is the best)</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+    </h2>
+    
+    <fieldset>
+      <input id='username' placeholder="Username" type="text" tabindex="1" required>
+    </fieldset>
+    <fieldset>
+      <input id="email" placeholder="Email address" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <textarea id="comment" placeholder="Type your reviews here..." tabindex="4" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+  </section>
+</div>
+
+<div class="footer">
+  <h3>Copyright &copy; Hulton 2017</h3>
+</div>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+     <script src="/js/review.js"></script>
+
+
+</body>
+</html>

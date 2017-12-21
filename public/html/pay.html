@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pay</title>
+	<meta charset="utf-8" lang="en">
+	<link rel="stylesheet" type="text/css" href="/css/pay.css">
+<!--
+  <link rel="stylesheet" type="text/css" href="maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">-->
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+<!--<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
+<!--
+<div class="header">
+  <ul class="navigation" role="navigation">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">My Reservation</a></li>
+    <li><a href="#">Sign In</In></a></li>
+  </ul>
+<h1>Hulton</h1>
+</div>-->
+
+<!--<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
+<!--
+<div class="header">
+  <ul class="navigation" role="navigation">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">My Reservation</a></li>
+    <li><a href="#">Sign In</In></a></li>
+  </ul>
+<h1>Hulton</h1>
+</div>-->
+
+<div class="container">
+  <div id="Checkout" class="inline">
+    <h1>Pay</h1>
+    <h2>
+      <select id='cardType'>
+        <option value="" selected disabled > Select Payment Type</option>
+        <option value="visa">Visa</option>
+        <option value="mastercard">Mastercard</option>
+        <option value="amex">American Express</option>
+        <option value="discover">Discover</option>
+      </select>
+    </h2>
+    
+    <section>
+      <div class="form-group">
+        <label for="PaymentAmount">Payment amount</label>
+        <div class="amount-placeholder">
+          <span id="total1"></span>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label or="NameOnCard">Name on card</label>
+        <input id="NameOnCard" class="form-control" type="text" maxlength="255"></input>
+      </div>
+    
+      <div class="form-group">
+        <label for="CreditCardNumber">Card number</label>
+        <input id="CreditCardNumber" class="null card-image form-control" type="text"></input>
+      </div>
+      
+      <div class="expiry-date-group form-group">
+        <label for="ExpiryDate">Expiry date</label>
+        <input id="ExpiryDate" class="form-control" type="text" placeholder="YYYY-MM" maxlength="100"></input>
+      </div>
+
+      <div class="security-code-group form-group">
+        <label for="SecurityCode">Security code</label>
+          <div class="input-container" >
+            <input id="SecurityCode" class="form-control" type="text" ></input>
+                 <!-- <i id="cvc" class="fa fa-question-circle"></i>-->
+          </div>
+              <!--<div class="cvc-preview-container two-card hide">
+                  <div class="amex-cvc-preview"></div>
+                  <div class="visa-mc-dis-cvc-preview"></div>
+              </div>-->
+      </div>
+    
+      <div class="form-group">
+        <label for="Address">Billing Address</label>
+        <input id="Address" class="null card-image form-control" type="text"></input>
+      </div>
+
+      <div class="zip-code-group form-group">
+        <label for="ZIPCode">ZIP/Postal code</label>
+        <div class="input-container">
+          <input id="ZIPCode" class="form-control" type="text" maxlength="10"></input>
+                <!-- <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-placement="left" data-content="Enter the ZIP/Postal code for your credit card billing address."><i class="fa fa-question-circle"></i></a>-->
+        </div>
+      </div>
+
+      <button id="PayButton" class="btn btn-block btn-success submit-button" type="submit">
+        <h4 class="align-middle">Pay <span id="total2"><span></h4>
+      </button>
+    </section>
+  </div>
+</div>
+
+<div class="footer">
+  <h3>Copyright &copy; Hulton 2017</h3>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script sec="maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="/js/pay.js"></script>
+
+</body>
+</html>
