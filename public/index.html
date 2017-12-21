@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hulton</title>
+	<meta charset="utf-8" lang="en">
+
+	<link rel="stylesheet" type="text/css" href="/css/index.css">
+
+</head>
+<body>
+
+<div class="header">
+  <ul class="navigation" role="navigation">
+    <li><a id="home" href="/index.html">Home</a></li>
+    <!--<li><a id="myres" href="#">My Reservation</a></li>-->
+    <li><a id="signin" href="/html/signin.html">Sign In</a></li>
+  </ul>
+  <h1>Hulton</h1>
+</div>
+  
+<div class = "selector">
+  <div class = "options">
+    <div class = "col">
+     <div class="sb-custom-select">
+       <select name="<portlet:namespace/>Country" id="countryId" onchange="countryChange()">
+         <option value="" selected disabled>Country</option>
+         <option value="United States">United States</option>
+         <option value="China">China</option>    
+       </select>
+      </div>
+    </div>
+    
+    <div class = "col">
+      <div class="sb-custom-select">
+        <label id="stateLabel"></label>
+        <select name="<portlet:namespace/>State" id="stateId">
+          <option value="" selected disabled>State/Province</option>
+        </select>
+     </div>
+    </div>
+    
+    <div class = col>
+      <input placeholder="Check-In Date" class="textbox-n" type="text" onfocus="(this.type='date')" id="indate" onchange="updatedate();">
+    </div>
+    <div class = col>
+      <input placeholder="Check-Out Date" class="textbox-n" type="text" onfocus="(this.type='date')" id="outdate" onchange="updatedate();">
+     </div>
+    
+    <div class = "col">
+      <div class="sb-custom-select">
+        <select name="room types" id="type" data-group-location-count>
+          <option value ="" disabled selected>Room Types</option>
+          <option value="Standard">Standard</option>
+          <option value="Double">Double</option>
+          <option value="Suite">Suite</option>    
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class = "search">
+    <button name="search" type="search" id="search-hotel" data-submit="...Sending">Search</button>
+  </div>
+</div>
+  
+<div class="footer">
+  <h3>Copyright &copy; Hulton 2017</h3>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="/js/index.js"></script>
+
+
+</body>
+</html>
